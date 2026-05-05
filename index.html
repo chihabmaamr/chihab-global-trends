@@ -16,80 +16,24 @@
             --dark-bg: #0a0a0a;
             --card-bg: #111111;
         }
-        body {
-            background-color: var(--dark-bg);
-            color: #ffffff;
-        }
-        .gold-text {
-            background: linear-gradient(135deg, var(--gold), var(--gold-light));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        .btn-gold {
-            background: linear-gradient(135deg, var(--gold), #c49b2a);
-            transition: all 0.3s ease;
-        }
-        .btn-gold:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
-        }
-        .product-card {
-            background: var(--card-bg);
-            border: 1px solid #1a1a1a;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .product-card:hover {
-            border-color: var(--gold);
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-        }
-        .product-card:hover .product-img {
-            transform: scale(1.05);
-        }
-        .product-img {
-            transition: transform 0.4s ease;
-        }
-        .admin-panel {
-            backdrop-filter: blur(20px);
-            background: rgba(10, 10, 10, 0.95);
-        }
-        .fade-in {
-            animation: fadeIn 0.6s ease-in-out;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .slide-up {
-            animation: slideUp 0.5s ease-out;
-        }
-        @keyframes slideUp {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .btn-admin {
-            background: rgba(59, 130, 246, 0.1);
-            border: 1px solid var(--electric-blue);
-            transition: all 0.3s ease;
-        }
-        .btn-admin:hover {
-            background: rgba(59, 130, 246, 0.2);
-            transform: translateY(-2px);
-        }
-        .input-dark {
-            background: #1a1a1a;
-            border: 1px solid #2a2a2a;
-            transition: all 0.3s ease;
-        }
-        .input-dark:focus {
-            border-color: var(--gold);
-            outline: none;
-            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
-        }
-        .glow-text {
-            text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
-        }
+        body { background-color: var(--dark-bg); color: #ffffff; }
+        .gold-text { background: linear-gradient(135deg, var(--gold), var(--gold-light)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .btn-gold { background: linear-gradient(135deg, var(--gold), #c49b2a); transition: all 0.3s ease; }
+        .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3); }
+        .product-card { background: var(--card-bg); border: 1px solid #1a1a1a; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .product-card:hover { border-color: var(--gold); transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); }
+        .product-card:hover .product-img { transform: scale(1.05); }
+        .product-img { transition: transform 0.4s ease; }
+        .admin-panel { backdrop-filter: blur(20px); background: rgba(10, 10, 10, 0.95); }
+        .fade-in { animation: fadeIn 0.6s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .slide-up { animation: slideUp 0.5s ease-out; }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        .btn-admin { background: rgba(59, 130, 246, 0.1); border: 1px solid var(--electric-blue); transition: all 0.3s ease; }
+        .btn-admin:hover { background: rgba(59, 130, 246, 0.2); transform: translateY(-2px); }
+        .input-dark { background: #1a1a1a; border: 1px solid #2a2a2a; transition: all 0.3s ease; }
+        .input-dark:focus { border-color: var(--gold); outline: none; box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1); }
+        .glow-text { text-shadow: 0 0 20px rgba(212, 175, 55, 0.3); }
     </style>
 </head>
 <body class="min-h-screen">
@@ -120,20 +64,11 @@
             <div class="absolute bottom-20 right-10 w-96 h-96 bg-blue-500 rounded-full filter blur-3xl"></div>
         </div>
         <div class="container mx-auto text-center relative z-10 fade-in">
-            <h2 class="text-4xl md:text-6xl font-bold mb-6">
-                Discover <span class="gold-text">Global</span> Trends
-            </h2>
-            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-8">
-                Premium Fashion & Cutting-Edge PC Hardware curated from the world's leading marketplace. 
-                Quality meets innovation.
-            </p>
+            <h2 class="text-4xl md:text-6xl font-bold mb-6">Discover <span class="gold-text">Global</span> Trends</h2>
+            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-8">Premium Fashion & Cutting-Edge PC Hardware curated from the world's leading marketplace. Quality meets innovation.</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#products" class="btn-gold px-8 py-4 rounded-lg text-black font-semibold text-lg">
-                    Browse Collection
-                </a>
-                <a href="#about" class="px-8 py-4 rounded-lg border border-gray-700 text-gray-300 hover:border-yellow-500 hover:text-yellow-500 transition-all">
-                    Learn More
-                </a>
+                <a href="#products" class="btn-gold px-8 py-4 rounded-lg text-black font-semibold text-lg">Browse Collection</a>
+                <a href="#about" class="px-8 py-4 rounded-lg border border-gray-700 text-gray-300 hover:border-yellow-500 hover:text-yellow-500 transition-all">Learn More</a>
             </div>
         </div>
     </section>
@@ -146,11 +81,7 @@
                 <div class="w-24 h-1 bg-gradient-to-r from-yellow-500 to-blue-500 mx-auto rounded-full"></div>
                 <p class="text-gray-400 mt-4">Handpicked premium items from global suppliers</p>
             </div>
-            
-            <div id="productGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                <!-- Products will be dynamically inserted here -->
-            </div>
-
+            <div id="productGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"></div>
             <div id="noProducts" class="hidden text-center py-20">
                 <div class="text-gray-500 text-6xl mb-4">📦</div>
                 <p class="text-gray-400 text-xl">No products available yet. Check back soon!</p>
@@ -162,11 +93,7 @@
     <section id="about" class="py-20 px-4 bg-gray-900/50">
         <div class="container mx-auto max-w-4xl text-center">
             <h3 class="text-3xl md:text-4xl font-bold mb-6">About <span class="gold-text">Chihab Global</span></h3>
-            <p class="text-gray-400 text-lg mb-8 leading-relaxed">
-                At Chihab Global Trends, we bridge the gap between global innovation and your doorstep. 
-                Specializing in premium fashion and high-performance PC hardware, we curate only the finest 
-                products from trusted AliExpress suppliers.
-            </p>
+            <p class="text-gray-400 text-lg mb-8 leading-relaxed">At Chihab Global Trends, we bridge the gap between global innovation and your doorstep. Specializing in premium fashion and high-performance PC hardware, we curate only the finest products from trusted AliExpress suppliers.</p>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 max-w-3xl mx-auto">
                 <div class="p-6 bg-black/40 rounded-xl border border-gray-800">
                     <div class="text-yellow-500 text-4xl mb-4">🌍</div>
@@ -200,11 +127,8 @@
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4 text-white">Connect With Us</h4>
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" 
-                       class="inline-flex items-center gap-2 text-blue-500 hover:text-blue-400 transition-colors">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                        </svg>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-blue-500 hover:text-blue-400 transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                         Facebook Page
                     </a>
                 </div>
@@ -226,50 +150,31 @@
                         <p class="text-gray-500 text-sm">Manage your product catalog</p>
                     </div>
                     <button id="closeAdmin" class="p-2 hover:bg-gray-800 rounded-lg transition-colors">
-                        <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                        </svg>
+                        <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
                     </button>
                 </div>
-
-                <!-- Add Product Form -->
                 <div class="bg-gray-900/50 p-6 rounded-xl border border-gray-800 mb-8">
                     <h4 class="text-lg font-semibold mb-4 text-yellow-500">Add New Product</h4>
                     <form id="productForm" class="space-y-4">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <input type="text" id="prodTitle" placeholder="Product Title" required maxlength="100"
-                                   class="w-full px-4 py-3 rounded-lg input-dark text-white placeholder-gray-600">
-                            <input type="text" id="prodImage" placeholder="Image URL (AliExpress link)" required
-                                   class="w-full px-4 py-3 rounded-lg input-dark text-white placeholder-gray-600">
+                            <input type="text" id="prodTitle" placeholder="Product Title" required maxlength="100" class="w-full px-4 py-3 rounded-lg input-dark text-white placeholder-gray-600">
+                            <input type="text" id="prodImage" placeholder="Image URL (AliExpress link)" required class="w-full px-4 py-3 rounded-lg input-dark text-white placeholder-gray-600">
                         </div>
-                        <textarea id="prodDesc" placeholder="Product Description" required maxlength="500"
-                                  class="w-full px-4 py-3 rounded-lg input-dark text-white placeholder-gray-600 h-24 resize-none"></textarea>
+                        <textarea id="prodDesc" placeholder="Product Description" required maxlength="500" class="w-full px-4 py-3 rounded-lg input-dark text-white placeholder-gray-600 h-24 resize-none"></textarea>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <input type="text" id="prodPrice" placeholder="Price (e.g., $49.99)" required maxlength="20"
-                                   class="w-full px-4 py-3 rounded-lg input-dark text-white placeholder-gray-600">
-                            <input type="url" id="prodLink" placeholder="AliExpress Affiliate Link" required
-                                   class="w-full px-4 py-3 rounded-lg input-dark text-white placeholder-gray-600">
+                            <input type="text" id="prodPrice" placeholder="Price (e.g., $49.99)" required maxlength="20" class="w-full px-4 py-3 rounded-lg input-dark text-white placeholder-gray-600">
+                            <input type="url" id="prodLink" placeholder="AliExpress Affiliate Link" required class="w-full px-4 py-3 rounded-lg input-dark text-white placeholder-gray-600">
                         </div>
-                        <button type="submit" class="w-full btn-gold py-3 rounded-lg font-semibold text-black mt-2">
-                            ➕ Add Product
-                        </button>
+                        <button type="submit" class="w-full btn-gold py-3 rounded-lg font-semibold text-black mt-2">➕ Add Product</button>
                     </form>
                 </div>
-
-                <!-- Product List -->
                 <div>
                     <div class="flex justify-between items-center mb-4">
                         <h4 class="text-lg font-semibold text-blue-400">Manage Products (<span id="prodCount">0</span>)</h4>
-                        <button id="clearAll" class="px-4 py-2 bg-red-500/10 text-red-400 rounded-lg hover:bg-red-500/20 transition-colors text-sm">
-                            Clear All
-                        </button>
+                        <button id="clearAll" class="px-4 py-2 bg-red-500/10 text-red-400 rounded-lg hover:bg-red-500/20 transition-colors text-sm">Clear All</button>
                     </div>
-                    <div id="adminProductList" class="space-y-3 max-h-96 overflow-y-auto pr-2">
-                        <!-- Admin product items will be listed here -->
-                    </div>
-                    <div id="noAdminProducts" class="text-center py-8 text-gray-600 hidden">
-                        No products added yet. Use the form above to add products.
-                    </div>
+                    <div id="adminProductList" class="space-y-3 max-h-96 overflow-y-auto pr-2"></div>
+                    <div id="noAdminProducts" class="text-center py-8 text-gray-600 hidden">No products added yet. Use the form above to add products.</div>
                 </div>
             </div>
         </div>
@@ -282,29 +187,21 @@
             <h3 class="text-xl font-bold text-white mb-2">🔐 Admin Access</h3>
             <p class="text-gray-500 text-sm mb-4">Enter your admin key to continue</p>
             <div class="flex gap-2">
-                <input type="password" id="adminKeyInput" placeholder="Enter Admin Key" 
-                       class="flex-1 px-4 py-3 rounded-lg input-dark text-white placeholder-gray-600">
-                <button id="submitKey" class="btn-gold px-6 py-3 rounded-lg font-semibold text-black">
-                    Unlock
-                </button>
+                <input type="password" id="adminKeyInput" placeholder="Enter Admin Key" class="flex-1 px-4 py-3 rounded-lg input-dark text-white placeholder-gray-600">
+                <button id="submitKey" class="btn-gold px-6 py-3 rounded-lg font-semibold text-black">Unlock</button>
             </div>
             <p id="keyError" class="text-red-400 text-sm mt-3 hidden">Invalid key. Please try again.</p>
         </div>
     </div>
 
     <script>
-        // Admin Configuration - SHA-256 hash of 'ilovereadbooks'
-        const ADMIN_KEY_HASH = '5c8a9e8f7d6b5a4c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8e7d6c5b4a3f2e1d0c';
-        
-        // Simple SHA-256 implementation for verification
-        async function sha256(message) {
-            const msgBuffer = new TextEncoder().encode(message);
-            const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
-            const hashArray = Array.from(new Uint8Array(hashBuffer));
-            return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+        // ✅ Admin Password (محدّث وجاهز للاستخدام)
+        const ADMIN_PASSWORD = 'ilovereadbooks';
+
+        async function verifyAdminKey(key) {
+            return key === ADMIN_PASSWORD;
         }
 
-        // XSS Sanitization
         function sanitizeInput(str) {
             const div = document.createElement('div');
             div.appendChild(document.createTextNode(str));
@@ -313,19 +210,12 @@
 
         function sanitizeUrl(url) {
             const clean = sanitizeInput(url);
-            try {
-                new URL(clean);
-                return clean;
-            } catch {
-                return '';
-            }
+            try { new URL(clean); return clean; } catch { return ''; }
         }
 
-        // State Management
         let products = JSON.parse(localStorage.getItem('cgt_products') || '[]');
         let isAdmin = false;
 
-        // DOM Elements
         const productGrid = document.getElementById('productGrid');
         const noProducts = document.getElementById('noProducts');
         const adminPanel = document.getElementById('adminPanel');
@@ -343,34 +233,22 @@
         const submitKeyBtn = document.getElementById('submitKey');
         const keyError = document.getElementById('keyError');
 
-        // Render Products
         function renderProducts() {
             productGrid.innerHTML = '';
-            
-            if (products.length === 0) {
-                noProducts.classList.remove('hidden');
-                return;
-            }
-            
+            if (products.length === 0) { noProducts.classList.remove('hidden'); return; }
             noProducts.classList.add('hidden');
-            
             products.forEach((product, index) => {
                 const card = document.createElement('div');
                 card.className = 'product-card rounded-xl overflow-hidden fade-in';
                 card.style.animationDelay = `${index * 0.1}s`;
-                
                 const cleanTitle = sanitizeInput(product.title);
                 const cleanDesc = sanitizeInput(product.description);
                 const cleanPrice = sanitizeInput(product.price);
                 const cleanLink = sanitizeUrl(product.affiliateLink);
                 const cleanImage = sanitizeUrl(product.image);
-                
                 card.innerHTML = `
                     <div class="relative overflow-hidden bg-gray-800 aspect-square">
-                        <img src="${cleanImage}" alt="${cleanTitle}" 
-                             class="product-img w-full h-full object-cover" 
-                             loading="lazy"
-                             onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 400%22%3E%3Crect fill=%22%23111%22 width=%22400%22 height=%22400%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23555%22 font-family=%22sans-serif%22 font-size=%2220%22%3EImage Not Found%3C/text%3E%3C/svg%3E'">
+                        <img src="${cleanImage}" alt="${cleanTitle}" class="product-img w-full h-full object-cover" loading="lazy" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 400%22%3E%3Crect fill=%22%23111%22 width=%22400%22 height=%22400%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23555%22 font-family=%22sans-serif%22 font-size=%2220%22%3EImage Not Found%3C/text%3E%3C/svg%3E'">
                         <div class="absolute top-3 right-3 bg-black/70 backdrop-blur-sm px-3 py-1 rounded-full">
                             <span class="text-yellow-400 font-bold text-sm">${cleanPrice}</span>
                         </div>
@@ -378,187 +256,88 @@
                     <div class="p-5">
                         <h4 class="text-lg font-semibold text-white mb-2 truncate">${cleanTitle}</h4>
                         <p class="text-gray-400 text-sm mb-4 line-clamp-2 min-h-[40px]">${cleanDesc}</p>
-                        <a href="${cleanLink}" target="_blank" rel="noopener noreferrer" 
-                           class="block w-full btn-gold py-3 rounded-lg text-center font-semibold text-black">
-                            Buy Now
-                        </a>
-                    </div>
-                `;
-                
+                        <a href="${cleanLink}" target="_blank" rel="noopener noreferrer" class="block w-full btn-gold py-3 rounded-lg text-center font-semibold text-black">Buy Now</a>
+                    </div>`;
                 productGrid.appendChild(card);
             });
         }
 
-        // Render Admin List
         function renderAdminList() {
             adminProductList.innerHTML = '';
             prodCount.textContent = products.length;
-            
-            if (products.length === 0) {
-                noAdminProducts.classList.remove('hidden');
-                return;
-            }
-            
+            if (products.length === 0) { noAdminProducts.classList.remove('hidden'); return; }
             noAdminProducts.classList.add('hidden');
-            
             products.forEach((product, index) => {
                 const item = document.createElement('div');
                 item.className = 'flex items-center gap-4 p-3 bg-gray-800/50 rounded-lg border border-gray-700 slide-up';
-                
-                const cleanTitle = sanitizeInput(product.title);
-                
                 item.innerHTML = `
                     <img src="${sanitizeUrl(product.image)}" alt="" class="w-12 h-12 rounded-lg object-cover bg-gray-700">
                     <div class="flex-1 min-w-0">
-                        <h5 class="text-sm font-medium text-white truncate">${cleanTitle}</h5>
+                        <h5 class="text-sm font-medium text-white truncate">${sanitizeInput(product.title)}</h5>
                         <p class="text-xs text-gray-500">${sanitizeInput(product.price)}</p>
                     </div>
-                    <button onclick="removeProduct(${index})" class="px-3 py-1 bg-red-500/10 text-red-400 rounded-lg hover:bg-red-500/20 transition-colors text-sm">
-                        Remove
-                    </button>
-                `;
-                
+                    <button onclick="removeProduct(${index})" class="px-3 py-1 bg-red-500/10 text-red-400 rounded-lg hover:bg-red-500/20 transition-colors text-sm">Remove</button>`;
                 adminProductList.appendChild(item);
             });
         }
 
-        // Add Product
-        productForm.addEventListener('submit', async (e) => {
+        productForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            
             const title = document.getElementById('prodTitle').value.trim();
             const image = document.getElementById('prodImage').value.trim();
             const description = document.getElementById('prodDesc').value.trim();
             const price = document.getElementById('prodPrice').value.trim();
             const affiliateLink = document.getElementById('prodLink').value.trim();
-            
             if (!title || !image || !description || !price || !affiliateLink) return;
-            
-            const newProduct = {
-                id: Date.now().toString(),
-                title: sanitizeInput(title),
-                image: sanitizeUrl(image),
-                description: sanitizeInput(description),
-                price: sanitizeInput(price),
-                affiliateLink: sanitizeUrl(affiliateLink),
-                addedAt: new Date().toISOString()
-            };
-            
-            products.unshift(newProduct);
+            products.unshift({ id: Date.now().toString(), title: sanitizeInput(title), image: sanitizeUrl(image), description: sanitizeInput(description), price: sanitizeInput(price), affiliateLink: sanitizeUrl(affiliateLink), addedAt: new Date().toISOString() });
             localStorage.setItem('cgt_products', JSON.stringify(products));
-            
             productForm.reset();
             renderProducts();
             renderAdminList();
-            
-            // Success feedback
             const btn = productForm.querySelector('button[type="submit"]');
-            const originalText = btn.innerHTML;
-            btn.innerHTML = '✓ Added!';
-            btn.classList.add('bg-green-600');
-            setTimeout(() => {
-                btn.innerHTML = originalText;
-                btn.classList.remove('bg-green-600');
-            }, 2000);
+            const original = btn.innerHTML;
+            btn.innerHTML = '✓ Added!'; btn.classList.add('bg-green-600');
+            setTimeout(() => { btn.innerHTML = original; btn.classList.remove('bg-green-600'); }, 2000);
         });
 
-        // Remove Product
         window.removeProduct = function(index) {
             if (confirm('Remove this product?')) {
                 products.splice(index, 1);
                 localStorage.setItem('cgt_products', JSON.stringify(products));
-                renderProducts();
-                renderAdminList();
+                renderProducts(); renderAdminList();
             }
         };
 
-        // Clear All Products
         clearAllBtn.addEventListener('click', () => {
             if (confirm('Are you sure you want to remove all products?')) {
-                products = [];
-                localStorage.setItem('cgt_products', JSON.stringify(products));
-                renderProducts();
-                renderAdminList();
+                products = []; localStorage.setItem('cgt_products', '[]');
+                renderProducts(); renderAdminList();
             }
         });
 
-        // Admin Authentication
-        async function verifyAdminKey(key) {
-            const hash = await sha256(key);
-            return hash === ADMIN_KEY_HASH;
-        }
-
-        adminTrigger.addEventListener('click', async () => {
-            if (!isAdmin) {
-                keyPrompt.classList.remove('hidden');
-                adminKeyInput.value = '';
-                keyError.classList.add('hidden');
-                adminKeyInput.focus();
-            } else {
-                adminPanel.classList.remove('hidden');
-                renderAdminList();
-            }
+        adminTrigger.addEventListener('click', () => {
+            if (!isAdmin) { keyPrompt.classList.remove('hidden'); adminKeyInput.value = ''; keyError.classList.add('hidden'); adminKeyInput.focus(); }
+            else { adminPanel.classList.remove('hidden'); renderAdminList(); }
         });
 
         submitKeyBtn.addEventListener('click', async () => {
             const key = adminKeyInput.value.trim();
             if (!key) return;
-            
             const isValid = await verifyAdminKey(key);
             if (isValid) {
-                isAdmin = true;
-                keyPrompt.classList.add('hidden');
-                adminPanel.classList.remove('hidden');
-                adminTrigger.innerHTML = '🔓 Admin';
-                adminTrigger.classList.add('border-green-500', 'text-green-400');
+                isAdmin = true; keyPrompt.classList.add('hidden'); adminPanel.classList.remove('hidden');
+                adminTrigger.innerHTML = '🔓 Admin'; adminTrigger.classList.add('border-green-500', 'text-green-400');
                 renderAdminList();
-            } else {
-                keyError.classList.remove('hidden');
-                adminKeyInput.value = '';
-                adminKeyInput.focus();
-            }
+            } else { keyError.classList.remove('hidden'); adminKeyInput.value = ''; adminKeyInput.focus(); }
         });
 
-        adminKeyInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') submitKeyBtn.click();
-        });
-
-        // Close Admin Panel
-        closeAdmin.addEventListener('click', () => {
-            adminPanel.classList.add('hidden');
-        });
-
-        adminOverlay.addEventListener('click', () => {
-            adminPanel.classList.add('hidden');
-        });
-
-        keyOverlay.addEventListener('click', () => {
-            keyPrompt.classList.add('hidden');
-        });
-
-        // Keyboard shortcuts
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') {
-                adminPanel.classList.add('hidden');
-                keyPrompt.classList.add('hidden');
-            }
-        });
-
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
-
-        // Initialize
-        document.addEventListener('DOMContentLoaded', () => {
-            renderProducts();
-        });
+        adminKeyInput.addEventListener('keypress', (e) => { if (e.key === 'Enter') submitKeyBtn.click(); });
+        closeAdmin.addEventListener('click', () => adminPanel.classList.add('hidden'));
+        adminOverlay.addEventListener('click', () => adminPanel.classList.add('hidden'));
+        keyOverlay.addEventListener('click', () => keyPrompt.classList.add('hidden'));
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') { adminPanel.classList.add('hidden'); keyPrompt.classList.add('hidden'); } });
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => { anchor.addEventListener('click', function(e) { e.preventDefault(); document.querySelector(this.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }); });
+        document.addEventListener('DOMContentLoaded', renderProducts);
     </script>
 </body>
 </html>
